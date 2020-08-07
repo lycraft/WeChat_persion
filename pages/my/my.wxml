@@ -1,0 +1,38 @@
+<view class="page">
+    <!--顶部图片区-->
+    <view class="page-header">
+        <swiper>
+            <swiper-item>
+                <image src="/images/icons/my_header_bg.jpg" mode="aspectFill" class="swiper-image" />
+            </swiper-item>
+        </swiper>
+        <view class="header-info cc">
+            <image src="{{userInfo.avatarUrl}}" mode="scaleToFill" class="header-icon" />
+            <text class="info-name vc">{{userInfo.nickName}}</text>
+            <button open-type='getUserInfo' bindgetuserinfo='getMyInfo'>点击获取头像和昵称</button>
+            <!-- open-type='getUserInfo 表示激活获取微信用户信息功能' -->
+            <!-- bindgetuserinfo='getMyInfo' 表示获得的数据将传递给自定义函数getMyInfo,可以自己取-->
+        </view>
+    </view>
+
+    <!--天气-->
+    <view class="page-item vc" bindtap="weatherClick">
+        <view class="vc">
+            <image src="/images/icons/icon_address.png" mode="scaleToFill" class="p-icon" />
+        </view>
+        <view class="item-name">天气</view>
+        <view class="vc">
+            <image src="/images/icons/icon_rightgo.png" mode="scaleToFill" class="p-icon" />
+        </view>
+    </view>
+    <!--优惠券-->
+    <view class="page-item vc" bindtap="discountClick">
+        <view class="vc">
+            <image src="/images/icons/icon_discount.png" mode="scaleToFill" class="p-icon" />
+        </view>
+        <view class="item-name">APP下载地址</view>
+        <view class="vc">
+            <image src="/images/icons/icon_rightgo.png" mode="scaleToFill" class="p-icon" />
+        </view>
+    </view>
+</view>

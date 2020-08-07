@@ -1,0 +1,38 @@
+{
+    "pages": [
+        "pages/function/function",
+        "pages/weather/weather",
+        "pages/my/my",
+        "pages/zigbee/zigbee"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#ffc0cb",
+        "navigationBarTextStyle": "white",
+        "navigationBarTitleText": "fun星人",
+        "backgroundColor": "#eeeeee",
+        "backgroundTextStyle": "light",
+        "enablePullDownRefresh": false
+    },
+    "tabBar": {
+        "color": "#afaeae",
+        "selectedColor": "#f00",
+        "borderStyle": "black",
+        "backgroundColor": "#f0f0f0",
+        "list": [
+            {
+                "pagePath": "pages/function/function",
+                "iconPath": "images/icons/function.png",
+                "selectedIconPath": "images/icons/function.png",
+                "text": "功能中心"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "iconPath": "images/icons/me.png",
+                "selectedIconPath": "images/icons/me_selected.png",
+                "text": "关于"
+            }
+        ]
+    },
+    "debug": true,
+    "sitemapLocation": "sitemap.json"
+}

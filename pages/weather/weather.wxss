@@ -1,0 +1,45 @@
+.container {
+    height: 100vh;
+    /* 高度100% */
+    display: flex;
+    /* flex布局 */
+    flex-direction: column;
+    /* 设置主轴方向，默认row从左往右 ，column是从上到下*/
+    align-items: center;
+    /* 用于设置项目在行中的对齐方式，项目在交叉轴居中对齐 */
+    justify-content: flex-start;
+    /* 项目间距相等，第一个和最后一个项目分别离起点/终点的距离为0 */
+    background-color: rgb(107, 99, 99);
+    /* 背景色 */
+}
+
+.detail {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: rgb(170, 178, 194);
+}
+
+.bar {
+    /* 横向文字 */
+    display: flex;
+    flex-direction: row;
+    margin: 50rpx 0;
+}
+
+.box {
+    /* 数据所有文字 */
+    width: 33.3%;
+    text-align: center;
+}
+
+text {
+    font-size: 80rpx;
+    color: #83f19b62;
+}
+
+image {
+    width: 220rpx;
+    /* 宽度 */
+}
